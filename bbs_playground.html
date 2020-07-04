@@ -9,24 +9,24 @@
   <h1>ひとこと掲示板</h1>
   <section>
     <h2>ひとこと投稿欄</h2>
-    <p>まずはひとことを投稿してみよう！</p>
-    <form action="#" methods="post">
+    <p id="form_description">まずはひとことを投稿してみよう！</p>
+    <form method="post">
       <label>
         名前:
-        <input type="text" name="user_name" placeholder="あなたのお名前を入力してね！">
+        <input type="text" id="user_name" name="user_name" placeholder="あなたのお名前を入力してね！">
       </label>
       <label>
         ひとこと:
-        <input type="text" name="comment" placeholder="あなたのひとことを聞かせて！">
+        <input type="text" id="comment" name="comment" placeholder="あなたのひとことを聞かせて！">
       </label>
-      <input type="submit" value="ひとことを投稿する！" onClick="">
     </form>
+    <button onClick="postComment();">ひとことを投稿する！</button>
   </section>
   <section>
     <h2>みんなのひとこと一覧</h2>
     <p>ここにはみんなが投稿してくれたひとことを見ることができるよ！</p>
     <div id="comments_area"></div>
   </section>
-  <script type="text/javascript" src="scripts/JS_playground.js"></script>
+  <script type="text/javascript" src="scripts/bbs_playground.js"></script>
 </body>
 </html>
