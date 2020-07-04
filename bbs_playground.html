@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles/JS_playground.css">
-  <title>JSのお勉強</title>
+  <title>ひとこと掲示板</title>
 </head>
 <body>
+  <h1>ひとこと掲示板</h1>
   <section>
-    <h2>まずはJSの変数を表示してみよう！</h2>
-    <div id="display_variable">ここに変数を出したい！</div>
+    <h2>ひとこと投稿欄</h2>
+    <p>まずはひとことを投稿してみよう！</p>
+    <form action="#" methods="post">
+      <label>
+        名前:
+        <input type="text" name="user_name" placeholder="あなたのお名前を入力してね！">
+      </label>
+      <label>
+        ひとこと:
+        <input type="text" name="comment" placeholder="あなたのひとことを聞かせて！">
+      </label>
+      <input type="submit" value="ひとことを投稿する！" onClick="">
+    </form>
   </section>
   <section>
-    <h2>次はボタンを押したら変数を表示、をやってみよう！</h2>
-    <form>
-      <input class="input-centered" type="button" value="ここのボタンを押してみよう！" onClick="displayText()">
-    </form>
-    <div id="onclick_display"></div>
+    <h2>みんなのひとこと一覧</h2>
+    <p>ここにはみんなが投稿してくれたひとことを見ることができるよ！</p>
+    <div id="comments_area"></div>
   </section>
   <script type="text/javascript" src="scripts/JS_playground.js"></script>
 </body>
