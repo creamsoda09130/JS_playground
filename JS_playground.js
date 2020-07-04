@@ -15,8 +15,7 @@ if (!displayBlock.innerHTML) {
 function displayText() {
     const element = document.getElementById('onclick_display');
     if (displayBlock.style.display === 'none') {
-      console.log('ここにいるよ！')
-      displayBlock.style.display === 'block';
+      displayBlock.style.display = 'block';
     }
     element.innerHTML = test;
 }
