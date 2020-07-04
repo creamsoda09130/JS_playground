@@ -1,0 +1,24 @@
+:root {
+  --margin-basic: 16px
+}
+
+section {
+  background-color: #e8c1ff;
+  padding: var(--margin-basic);
+}
+
+section:not(:first-of-type) {
+  margin-top: var(--margin-basic);
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  border-top: dashed 1px #d68fff;
+  border-bottom: dashed 1px #d68fff;
+}
+
+.input-centered {
+  display: block;
+  margin: 0 auto;
+}
