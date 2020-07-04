@@ -9,11 +9,13 @@
   <h1>ひとこと掲示板</h1>
   <section>
     <h2>ひとこと投稿欄</h2>
-    <p id="form_description">まずはひとことを投稿してみよう！</p>
+    <div id="form-content">
+      <p id="form-description">まずはひとことを投稿してみよう！</p>
+    </div>
     <form method="post">
       <label>
         名前:
-        <input type="text" id="user_name" name="user_name" placeholder="あなたのお名前を入力してね！">
+        <input type="text" id="user-name" name="user_name" placeholder="あなたのお名前を入力してね！">
       </label>
       <label>
         ひとこと:
@@ -25,7 +27,7 @@
   <section>
     <h2>みんなのひとこと一覧</h2>
     <p>ここにはみんなが投稿してくれたひとことを見ることができるよ！</p>
-    <div id="comments_area"></div>
+    <div id="comments-area"></div>
   </section>
   <script type="text/javascript" src="scripts/bbs_playground.js"></script>
 </body>
